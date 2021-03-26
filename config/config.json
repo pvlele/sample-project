@@ -1,0 +1,63 @@
+{
+    "JmeterSetting": {
+        "mainSetting": {
+            "jmxfile": "sample.jmx",
+            "projectpath": "/home/PT/projects/sample-project",
+            "JMETER_HOME": "/home/PT/tools/jmeter/apache-jmeter-5.4.1",
+            "ReportFilePrefix": "sample_LT",
+            "micro_service": "sample",
+            "sanityTest": "false",
+            "sanityTestDuration": "60",
+            "waitTime": "60",
+            "uploadResultInDB": "true"
+        },
+        "Script": {
+            "duration": "300",
+            "user1" : "5",
+            "user2" : "3"
+        },
+        "SplitMode": {
+            "SplitMode": "false",
+            "Master": "172.28.17.244",
+            "SlaveList": "",
+            "remoteUser": "root"
+        }
+    },
+    "DB": {
+        "host": "172.28.18.170",
+        "port": "5432",
+        "user": "postgres",
+        "database": "postgres",
+        "baseline": 50
+    },
+    "JAVA_OPTIONS": {
+        "JMX_OPT": "-Dcom.sun.management.jmxremote  -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.remote.ssl=false"
+    },
+    "housekeeping": {
+        "rawTableRetention": "100",
+        "movetoBackup": "1",
+        "deleteFromBackup": "5"
+    },
+     "HardwareStats": {
+        "getstats" : "false",
+        "user" : "perfuser",
+        "ms_ips_path" : "/home/PT/projects/RegistryMS/scripts/IP_list.txt",
+        "script" : "/home/perfuser/load-test-scripts-RegistryMS/scheduler.py",
+        "hardware_stat_path" : "/home/perfuser/load-test-scripts-RegistryMS",
+        "ms_cms_service" : "registry-e71c9c1e",
+        "kafka_cms_service" : "agent-res",
+        "zookeeper_cms_service" : "agent-res",
+        "cassandra_cms_service" : "common"
+  },
+    "customScripts": {
+        "preTestExecution": "false",
+        "preTestExecutionNodes": "100.123.12.13,127.0.1.1",
+        "preTestScript": "preTestScript.py",
+        "postTestExecution": "true",
+        "postTestScript": "postTestScript.py"
+    },
+    "RunSetting": {
+        "totalRunDuration": "3600",
+        "HighestRampup": "60"
+    }
+}
