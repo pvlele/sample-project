@@ -454,7 +454,7 @@ else:
 jmeter_sh = path.join(JMETER_HOME, "bin/jmeter")
 jmx_file = path.join(project_path, jmxfile_name)
 
-housekeeping()
+#housekeeping()
 
 loadtest_properties = path.join(project_path, "config", "loadtest.properties")
 with open(loadtest_properties, "w") as lt:
