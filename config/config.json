@@ -3,7 +3,7 @@
         "mainSetting": {
             "jmxfile": "sample.jmx",
             "projectpath": "/home/PT/projects/sample-project",
-            "JMETER_HOME": "/home/PT/tools/jmeter/apache-jmeter-5.4.1",
+            "JMETER_HOME": "/home/PT/tools/jmeter",
             "ReportFilePrefix": "sample_LT",
             "micro_service": "sample",
             "sanityTest": "false",
