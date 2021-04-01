@@ -57,7 +57,7 @@
         "postTestScript": "postTestScript.py"
     },
     "RunSetting": {
-        "totalRunDuration": "3600",
-        "HighestRampup": "60"
+        "totalRunDuration": "300",
+        "HighestRampup": "0"
     }
 }
